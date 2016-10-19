@@ -1,0 +1,42 @@
+<form class="form-horizontal" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">ФИО</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Иванов Иван Иванович" 
+                   required [(ngModel)]="model.name" name="name" #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                Укажите ФИО
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="text" class="col-sm-2 control-label">E-mail</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" 
+                    placeholder="ivanov@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                    [(ngModel)]="model.email" name="email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="phone" class="col-sm-2 control-label">Телефон</label>
+        <div class="col-sm-10 input-group">
+            <span class="input-group-addon">+7</span>
+            <input type="text" class="form-control" id="phone" 
+                   placeholder="(913) 888-3333" pattern="[(][1-9][0-9]{2}[)]\s[0-9]{3}[-][0-9]{4}"
+                   [(ngModel)]="model.phone" name="phone"
+                   [textMask]="{mask: mask}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="address" class="col-sm-2 control-label">Адрес</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="address" placeholder="г. Москва, ул. Ленина 40, кв 40"
+                   [(ngModel)]="model.address" name="address">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" [disabled]="!contactForm.form.valid">Сохранить</button>
+        </div>
+    </div>
+</form>

@@ -1,3 +1,27 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid header">
+    <div class="container">
+        <h1>{{title}}</h1>
+    </div>
+</div>
+
+<div class="container outerbox">
+    <div class="row toolbox">
+        <div class="col-xs-9 search">
+            <input type="text" class="form-control" placeholder="Поиск" 
+                [(ngModel)]="searchStr"
+                #search="ngModel">
+        </div>
+        <div class="col-xs-3 create">
+            <button class="btn btn-default" type="button" 
+                [class.active]="showCreateForm" 
+                (click)="buttonCreateClick()">
+                Создать
+            </button>
+        </div>
+    </div>
+
+    <div class="container contactbox">
+        <app-create-contact *ngIf="showCreateForm" (submitted)="onSubmittedCreateForm($event)"></app-create-contact>
+        <app-book-records [searchStr]="searchStr" ></app-book-records>
+    </div>
+</div>

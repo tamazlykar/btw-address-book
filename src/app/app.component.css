@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    color: #FAFAFA;
+    padding-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+
+.header {
+    background-color: #9F5050;
+    margin-bottom: -75px;
+    padding-bottom: 75px;
+}
+
+.search {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.search input {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
+}
+
+.create {
+    padding-right: 30px;
+}
+
+.create button {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
+}
+
+.create .btn-default {
+    float: right;
+}
+
+.outerbox {
+    background-color: #ECECEC;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.12),0 1px 4px rgba(0,0,0,0.24);
+    min-height: 80px;
+}
+
+.toolbox {
+    padding: 15px;
+}
+
+.contactbox {
+    margin-left: -5px;
+}

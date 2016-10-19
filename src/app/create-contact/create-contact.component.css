@@ -1,0 +1,39 @@
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.form-horizontal {
+  margin-left: 10px;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.alert {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.input-group {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.input-group-addon {
+  background-color: #f7f7f7;
+}

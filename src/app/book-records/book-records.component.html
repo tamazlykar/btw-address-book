@@ -1,0 +1,5 @@
+<app-book-record *ngFor="let contact of contacts | async | reverse | search:searchStr"
+                [contact]="contact" 
+                (deleteKey)="deleteContact($event)"
+                (updateContact)="updateContact($event)">
+</app-book-record>
