@@ -7,8 +7,7 @@
 # Prerequisites
 
 1. Установить [Node.js](https://nodejs.org/en/)
-2. Установить [Angular-CLI](https://github.com/angular/angular-cli) `npm install -g angular-cli`
-3. Получить код проекта
+2. Получить код проекта
 ```
 git clone https://github.com/tamazlykar/btw-address-book.git address-book
 cd address-book
@@ -17,7 +16,7 @@ npm install
 
 ## Run
 
-1. Запустить `ng-serve` 
+1. Запустить `npm start` 
 2. Перейти по адресу `http://localhost:4200/` в браузере.
 
 ## Author
