@@ -1,6 +1,7 @@
 # AddressBook
 
 Данный проект является тестовым заданием "Адресная книга" для участия в инкубаторе для Frontend разработчиков от Bitworks Software Company.
+
 Проект был написан с использованием [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
 # Prerequisites
