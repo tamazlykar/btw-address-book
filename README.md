@@ -19,4 +19,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Author
 
 [Тамазлыкарь Даниил](https://vk.com/tamazlykar)
+
 e-mail: tadani7@gmail.com
