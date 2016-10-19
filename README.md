@@ -19,7 +19,6 @@ npm install
 
 1. Запустить `ng-serve` 
 2. Перейти по адресу `http://localhost:4200/` в браузере.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Author
 
