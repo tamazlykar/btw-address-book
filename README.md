@@ -8,7 +8,12 @@
 
 1. Установить [Node.js](https://nodejs.org/en/)
 2. Установить [Angular-CLI](https://github.com/angular/angular-cli) `npm install -g angular-cli`
-3. Установить зависимости из корня проекта `npm install` 
+3. Получить код проекта
+```
+git clone https://github.com/tamazlykar/test.git address-book
+cd address-book
+npm install
+```
 
 ## Run
 
